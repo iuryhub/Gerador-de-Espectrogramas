@@ -1,4 +1,5 @@
 # Gerador de Espectrogramas em Python
+
 [![Python: 3.8+](https://ldsimg.shie.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
 Um script em Python para gerar e salvar espectrogramas de forma automatizada a partir de uma coleção de arquivos de áudio. Este projeto utiliza `librosa` para a análise de áudio e `matplotlib` para a visualização.
