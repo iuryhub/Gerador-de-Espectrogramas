@@ -5,7 +5,7 @@ import numpy as np
 
 def cria_e_salvar_espectograma(caminho_do_audio, caminho_de_saida):
     try:
-        wave, sample_rate = librosa.load(caminho_do_audio, sr=None)
+        wave, sample_rate = librosa.load(caminho_do_audio, sr=None) 
         espectograma = np.abs(librosa.stft(wave))
         espectograma_db = librosa.amplitude_to_db(espectograma, ref=np.max)
         fig, ax = plt.subplots(figsize=(10, 4))
@@ -20,7 +20,7 @@ def cria_e_salvar_espectograma(caminho_do_audio, caminho_de_saida):
 
 
 pasta_entrada = 'dataset'
-pasta_saida = 'espectogramas'
+pasta_saida = 'espectrogramas'
 
 os.makedirs(pasta_saida, exist_ok=True)
 
